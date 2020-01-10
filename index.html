@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Grade Calculator</title>
+</head>
+<body>
+<h1 class="heading">Current Grade calculator <br>
+Final Calculator</h1>
+
+<h2 class="heading">Please fill out the required boxes below</h2>
+
+<table id="gradetable">
+    <tr id="category">
+        <td>Category</td>
+        <td>Grades</td>
+        <td>Weight</td>
+    </tr>
+    <tr id="homework">
+        <td>Homework</td>
+        <td><input id="homeworkgrade" placeholder="Enter homework grades"></td>
+        <td><input id="homeworkweight" placeholder="Enter homework weight"></td>
+    </tr>
+    <tr id="classwork">
+        <td>Classwork</td>
+        <td><input id="classworkgrade" placeholder="Enter classwork grades"></td>
+        <td><input id="classworkweight" placeholder="Enter classwork weight"></td>
+    </tr>
+    <tr id="participation">
+        <td>Participation</td>
+        <td><input id="participationgrade" placeholder="Enter participation  grades"></td>
+        <td><input id="participationweight" placeholder="Enter participation weight"></td>
+    </tr>
+    <tr id="quiz">
+        <td>Quizzes</td>
+        <td><input id="quizgrade" placeholder="Enter quiz grades"></td>
+        <td><input id="quizweight" placeholder="Enter quiz weight"></td>
+    </tr>
+    <tr id="tests">
+        <td>Tests</td>
+        <td><input id="testgrade" placeholder="Enter test  grades"></td>
+        <td><input id="testweight" placeholder="Enter test weight"></td>
+    </tr>
+</table>
+<table id="finaltable">
+    <tr>
+        <td>Desired grade in the class</td>
+        <td>Weight of final</td>
+    </tr>
+    <tr>
+        <td><input id="wantedgrade" placeholder="Enter desired grade"></td>
+        <td><input id="finalweight" placeholder="Enter weight of final"></td>
+    </tr>
+</table>
+<button onclick="calculatecurrent()">Calculate your current grade</button>
+<div id="error"></div>
+<div id="currentgradeoutput"></div>
+<div id="finalgradeoutput"></div>
+</body>
+</html>
+
